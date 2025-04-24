@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+      ref="stylesheet"
+      href="pp.css"
+    />
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function searchFunction() {
+          let query = document.querySelector('input').value;
+          alert("Searching for: " + query);
+      }
+  </script>
+    <style>
+          
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            padding: 10px 8px;
+            height:30px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 8px;
+            text-align: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 8px;
+            padding: 2px;
+
+        }
+        .nav-icons {
+            display: flex;
+            gap: 15px;
+            size: 10px;
+            display: inline;
+            text-align: right;
+
+        
+        }
+        .nav-icons svg {
+            width: 15px;
+            height: 15px;
+            display: inline;
+            text-align: right;
+            
+        }
+        .navbar-brand img {
+            width: 30px;
+            height: auto;
+            display: inline;
+            
+        }
+        .hover{
+            color: #f6ece9;
+            text-decoration: underline;
+        }
+       
+    </style>
+  </head>
+  <body>  
+    <h1 style="text-align: center;">Nike</h1>
+        <nav>
+          <div class="navbar-brand">
+              <a href="#">
+                  <img src="https://media.about.nike.com/image-downloads/cf68f541-fc92-4373-91cb-086ae0fe2f88/002-nike-logos-swoosh-white.jpg" alt="Nike Logo" />
+              </a>
+          </div>
+          <div class="nav-links">
+              <a href="nwf.html">NEW & FEATURED</a>
+              <a href="nike_shoe.html">MEN</a>
+              <a href="women.html">WOMEN</a>
+              <a href="kids.html">KIDS</a>
+              <a href="sale.html">SALE</a>
+              <a href="sign.html">SIGN UP</a>
+              
+          </div>
+          <div class="search-container" style="display: flex;width:10pxpx;height:18px;border-width:0px;">
+            <input type="text" placeholder="Search...">
+            <button onclick="searchFunction()" style="display: flex;color: white;">
+            <svg xmlns="file:///C:/Users/jeeva/Downloads/search.svg" width="16" height="18" fill="black" color= "white" class="bi bi-search" viewBox="0 0 16 16" border="0px">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            </button>
+          </div>
+          <div class="nav-icons">
+              <svg xmlns="file:///C:/Users/jeeva/Downloads/heart-fill.svg"  fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+              <svg xmlns="file:///C:/Users/jeeva/Downloads/cart-fill.svg" fill="white" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+          </div>
+      </nav>
+        <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        style="padding: 20px; margin: 0px;"
+     >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/i/e/x/-original-imah65w8nzgjz6xn.jpeg?q=90&crop=false"
+            class="d-block w-20"
+            height="400px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static.nike.com/a/images/w_1280,c_limit,q_auto,f_auto/d800e496-de29-49c3-b152-3f320ffc67b4/air-jordan-1-high-og-black-toe-dz5485-106-release-date.jpg"
+            class="d-block w-20"
+            height="400px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/57c610da-1572-42e4-9177-71b2ed7d0145/AIR+JORDAN+4+RM.png"
+            class="d-block w-20"
+            height="400px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+        color="black"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="width:0px;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+        color="black"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true" style="width:0px; height: 1000px;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <h3 style="font-size: 20px;">Featured</h3>
+    <div class="container" style="display: flex; justify-content: center; width: 100%;">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+      style="padding: 20px;width:800px;"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://media.gq.com/photos/671bb5124618127199933a38/master/w_2560%2Cc_limit/nikesneakerslede.png"
+            class="d-block w-20"
+            height="200px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+          <p style="text-align: center;">Nike Running Shoe Finder</p>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/f019e808-3f58-41a1-aa58-64b6cd680c7f/KILLSHOT+2.png"
+            class="d-block w-20"
+            height="200px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+          <p style="text-align: center;">Killshot 2 Leather</p>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f278e36a-db77-4574-88b6-58c14eb89e69/NIKE+VOMERO+18+%28GS%29.png"
+            class="d-block w-20"
+            height="200px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+          <p style="text-align: center;">Vomero 18</p>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+        color="black"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="width:0px;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+        color="black"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true" style="width:0px; height: 1000px;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    </div>
+    <h3 style="font-size: 20px;">Exploration in progress</h3>
+    <div class="card-columns" style="display: flex; justify-content: center;width: 100%;">
+        <div class="card" style="width: 11rem; margin-left: 2px;">
+            <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/e19a5b79-4f36-4cff-ab77-88ca290901ed/W+AIR+MAX+DN8.png" class="card-img-top" style="margin: 2px;padding:10px;border-color: black;border-width: 10px;" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Max Dn8</h5>
+                <p class="card-text">~Releasing March 6th~</p>
+                <a href=""class="btn btn-primary" style="padding: 10px; margin: 0px; background-color: black;border-color: black;border-radius:20px; width:100px;height:35px;font-size: 13px;">Notify Me</a>
+                
+            </div>
+        </div>
+            <div class="card" style="width: 11rem; margin-left: 2px;">
+              <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/634c872e-8122-4215-94d9-c3e71b789222/NIKE+AIR+MAX+90+PRM.png" class="card-img-top" style="margin: 2px;padding:10px;border-color: black;border-width: 10px;" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Nike Air Max 90 Premium</h5>
+                  <p class="card-text" style="padding:11px;">~Just in~</p>
+                  <a href=""class="btn btn-primary" style="padding: 10px; margin: 0px; background-color: black;border-color: black;border-radius:20px; width:100px;height:35px;font-size: 13px;">Visit Now</a>
+              </div>
+            </div>
+        </div>
+    <h3 style="font-size: 20px;padding:10px;">Best Sellers</h3>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" gap="20px" margin="20px">
+        <div class="col">
+            <div class="card h-100 text-center" style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b6fffc1-ab60-4e91-bff9-3281a3f30d72/NIKE+AIR+MAX+AP.png" class="card-img-top" alt="Nike Air Max AP">
+                <div class="card-body">
+                    <h5 class="card-title">NIKE AIR MAX AP</h5>
+                    <p class="card-text">₹ 13,995</p>
+                    <a href="pp.html" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center"style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2f3cdf1b-746d-4622-87d4-c0981e42700c/K+NK+DF+UV+WOVEN+JKT.png" class="card-img-top" alt="Dri-FIT UV Jacket" style="height:420px;">
+                <div class="card-body">
+                    <h5 class="card-title"> Kids' Dri-FIT UV Jacket</h5>
+                    <p class="card-text">₹ 2,895.00</p>
+                    <a href="#" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center"style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/1793103e-7975-44f7-934d-b136ff18a1fb/M+J+DF+SPRT+HOOP+FLC+FZ.png" class="card-img-top" alt="Jordan Sport Hoop Fleece">
+                <div class="card-body">
+                    <h5 class="card-title">Jordan Sport Hoop Fleece</h5>
+                    <p class="card-text">₹ 5,695.00</p>
+                    <a href="pp6.html" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+          </div>
+      
+        <div class="col">
+            <div class="card h-100 text-center"style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/17a94afc-19ff-43e6-a8d5-1537a08d8a7d/AS+W+NSW+NK+WR+POLY+KNIT+JKT.png" class="card-img-top" alt="Nike Sportswear Windrunner">
+                <div class="card-body">
+                    <h5 class="card-title">Nike women Windrunner</h5>
+                    <p class="card-text">₹ 5,495.00</p>
+                    <a href="#" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center"style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/4173e23e-592b-4e3c-b8f6-d04525ac62b5/AS+M+NK+WVN+WR+LND+GFX+JKT.png" class="card-img-top" alt="Nike Windrunner">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Windrunner</h5>
+                    <p class="card-text">₹ 5,995.00</p>
+                    <a href="#" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 text-center"style="padding: 8px;">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d66428e9-3575-4385-8b7d-36992831cc74/JORDAN+TATUM+3+PF.png" class="card-img-top" alt="Tatum 3 PF Basketball Shoe">
+                <div class="card-body">
+                    <h5 class="card-title">Tatum 3 PF Basketball Shoe</h5>
+                    <p class="card-text">₹ 11,495.00</p>
+                    <a href="#" class="btn btn-dark" style="background-color: #000;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div>
+          <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          style="padding: 20px; margin: 0px;"
+       >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://media.istockphoto.com/id/167313498/photo/black-and-white-runner.jpg?s=612x612&w=0&k=20&c=dhiWEac-wppC3-ubkaHaz1GHAZHgxVNar9-DRhbfKQo="
+              class="d-block w-20"
+              height="400px"
+              alt="..."
+              text-align="center"
+              cover="full"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/5f4bc168b00e79f044e750f6/Neymar-and-Nike-and-Brazil/960x0.jpg?format=jpg&width=960"
+              class="d-block w-20"
+              height="400px"
+              alt="..."
+              text-align="center"
+              cover="full"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSPoWuIdGTBY04sLM_AYKeNQwk6CuEYt7qw&s"
+              class="d-block w-20"
+              height="400px"
+              alt="..."
+              text-align="center"
+              cover="full"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src=""
+            class="d-block w-20"
+            height="400px"
+            alt="..."
+            text-align="center"
+            cover="full"
+            width="100%"
+          />
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+          color="black"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width:0px;"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+          color="black"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width:0px;"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+          color="black"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width:0px; height: 1000px;"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+          
+              
+
+        </div>
+    </div>
+    <footer class="bg-black text-white pt-5 pb-4">
+      <div class="container" style="background-color:black ;color: white;margin: 0%;">
+        <div class="row">
+    
+          <!-- Nike Logo and Tagline -->
+          <div class="col-md-4 mb-4">
+            <h3 class="font-weight-bold">
+              <i class="fab fa-nike text-white mr-2"></i>NIKE
+            </h3>
+            <p>Inspiring every athlete — if you have a body, you are an athlete.</p>
+          </div>
+    
+          <!-- Navigation Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase">Explore</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">Men</a></li>
+              <li><a href="#" class="text-white-50">Women</a></li>
+              <li><a href="#" class="text-white-50">Kids</a></li>
+              <li><a href="#" class="text-white-50">New Releases</a></li>
+            </ul>
+          </div>
+    
+          <!-- Social Media -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase">Follow Us</h5>
+            <a href="#" class="text-white-50 mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white-50 mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white-50 mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white-50"><i class="fab fa-youtube"></i></a>
+          </div>
+    
+        </div>
+    
+        <hr class="bg-white">
+    
+        <!-- Copyright -->
+        <div class="text-center text-white-50">
+          &copy; 2025 Nike, Inc. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Font Awesome CDN (replace with your kit if needed) -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+    
+    </div>
+</div>
+  </body>
+</html>
